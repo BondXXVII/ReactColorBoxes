@@ -14,22 +14,17 @@ height: 10em;
 width: 10em;
 border: 1px solid black;
 }
+
 .box:hover{
   box-shadow: 25px 25px 25px black;
   transform: scale(1.2)
 }
 
-@keyframes App-logo-spin {
+@keyframes Color-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
 }

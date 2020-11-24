@@ -7,10 +7,10 @@ class App extends React.Component {
     const boox = []
     for(let i=0; i < 81; i++)
       {
-        boox.push(<Boxes></Boxes>)
+        boox.push(<Boxes key={i}></Boxes>)
       }
     return (
-      <div className="App">
+      <div>
         {boox}
       </div>
     );
