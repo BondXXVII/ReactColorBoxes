@@ -2,19 +2,18 @@ body
 {
     margin: auto;
     background-color: dimgrey;
-    height: 90em;
-    width: 90em;
+    height: 54.6em;
+    width: 91.3em;
     border-style: solid;
     border-color: black;
 }
 .box
 {
 float: left;
-height: 10em;
-width: 10em;
+height: 9em;
+width: 9em;
 border: 1px solid black;
 }
-
 .box:hover{
   box-shadow: 25px 25px 25px black;
   transform: scale(1.2)
@@ -27,4 +26,33 @@ border: 1px solid black;
   to {
     transform: rotate(360deg);
   }
+}
+.zoom
+{
+animation: fly 33s linear infinite;
+top: 0;
+left: 0;
+transform: translateX(-120%) translateY(-120%) rotateZ(0);
+position: fixed;
+animation-delay: 2s;
+z-index: 9;
+}
+@keyframes fly {
+	98.001%, 0% {
+    display: block;
+	transform: translateX(-200%) translateY(100vh) rotateZ(0deg)}
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(360deg)}
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)}
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-360deg)}
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-0deg)}
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(360deg)}
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(0deg)}
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(360deg)}
 }

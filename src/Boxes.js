@@ -2,8 +2,8 @@ import './App.css';
 import React from 'react';
 
 class Boxes extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
     bgColor: "",
     bgSpin: ""

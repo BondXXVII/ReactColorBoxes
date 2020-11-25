@@ -1,17 +1,21 @@
 import './App.css';
 import React from 'react';
 import Boxes from './Boxes';
+import ZoominBox from './ZoominBox';
+import ZoominBox2 from './ZoominBox2';
 
 class App extends React.Component {
   render() {
-    const boox = []
-    for(let i=0; i < 81; i++)
+    const demboxes = []
+    for(let i=0; i < 60; i++)
       {
-        boox.push(<Boxes key={i}></Boxes>)
+        demboxes.push(<Boxes key={i}/>)
       }
     return (
       <div>
-        {boox}
+        {demboxes}
+        <ZoominBox/>
+        <ZoominBox2/>
       </div>
     );
   }
